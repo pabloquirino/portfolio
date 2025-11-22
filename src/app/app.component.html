@@ -1,6 +1,5 @@
-<div class="max-w-xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto">
-    <header
-        class="flex justify-between items-center !bg-transparent border border-bordercolor rounded-xl px-16 py-4 2xl:py-7 mt-4">
+<div class="max-w-xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto relative">
+    <header class="flex justify-between items-center !bg-transparent border border-bordercolor rounded-xl px-16 py-4 2xl:py-7 xl:mt-4">
 
         <span class="text-xl text-white tracking-widest font-semibold">
             PABLO QUIRINO
@@ -22,11 +21,15 @@
 
     <!-- MENU MOBILE DROPDOWN -->
     <div *ngIf="menuOpen"
-        class="xl:hidden mt-2 bg-[#111723] border border-bordercolor rounded-xl p-6 flex flex-col gap-4 text-white animate-fade">
-        <a routerLink="/sobre" class="text-lg hover:text-secondary transition">SOBRE</a>
-        <a routerLink="/tecnologias" class="text-lg hover:text-secondary transition">TECNOLOGIAS</a>
-        <a routerLink="/portfolio" class="text-lg hover:text-secondary transition">PORTFOLIO</a>
+        class="xl:hidden mt-2 bg-[#111723] border border-bordercolor rounded-xl p-6 flex flex-col gap-2 text-white text-center animate-fade absolute w-full">
+        <a routerLink="/sobre" class="text-lg border border-transparent border-b-bordercolor pb-2 hover:text-secondary transition">SOBRE</a>
+        <a routerLink="/tecnologias" class="text-lg border border-transparent border-b-bordercolor pb-2 hover:text-secondary transition">TECNOLOGIAS</a>
+        <a routerLink="/portfolio" class="text-lg border border-transparent border-b-bordercolor pb-2 hover:text-secondary transition">PORTFOLIO</a>
         <a routerLink="/contato" class="text-lg hover:text-secondary transition">CONTATO</a>
     </div>
+
+    <main class="mt-5 xl:mt-16 2xl:mt-24 px-5">
+        <router-outlet></router-outlet>
+    </main>
 
 </div>

@@ -1,10 +1,9 @@
 <div class="max-w-xl lg:max-w-3xl xl:max-w-5xl 2xl:max-w-7xl mx-auto relative">
     <header class="flex justify-between items-center !bg-transparent border border-bordercolor rounded-xl px-16 py-4 2xl:py-7 xl:mt-4">
 
-        <span class="text-xl text-white tracking-widest font-semibold">
+        <h1 class="text-xl text-white tracking-widest font-semibold">
             PABLO QUIRINO
-        </span>
-
+        </h1>
 
         <nav class="hidden xl:flex gap-6 text-white text-lg">
             <a routerLink="/sobre" class="hover:text-secondary cursor-pointer transition">SOBRE</a>
@@ -13,7 +12,7 @@
             <a routerLink="/contato" class="hover:text-secondary cursor-pointer transition">CONTATO</a>
         </nav>
 
-        <button (click)="toggleMenu()" class="xl:hidden text-white text-3xl">
+        <button (click)="toggleMenu()" class="xl:hidden text-white text-3xl" aria-label="ABRIR MENU">
             <i class="fa-solid fa-bars"></i>
         </button>
 

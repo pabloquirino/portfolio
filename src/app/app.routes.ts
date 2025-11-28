@@ -2,7 +2,7 @@ import { Routes } from '@angular/router';
 import { SobreComponent } from './pages/sobre/sobre.component';
 import { TecnologiasComponent } from './pages/tecnologias/tecnologias.component';
 import { ContatoComponent } from './pages/contato/contato.component';
-import { PortifolioComponent } from './pages/portifolio/portifolio.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 export const routes: Routes = [
 
@@ -10,7 +10,7 @@ export const routes: Routes = [
 
     { path: 'sobre', component: SobreComponent },
     { path: 'tecnologias', component: TecnologiasComponent },
-    { path: 'portfolio', component: PortifolioComponent },
+    { path: 'portfolio', component: PortfolioComponent },
     { path: 'contato', component: ContatoComponent }
 
 ];

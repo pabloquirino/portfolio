@@ -1,0 +1,28 @@
+<section class="max-w-7xl mx-auto mt-12 text-white">
+
+    <div class="mb-12">
+        <h2 class="text-4xl lg:text-5xl font-semibold tracking-wide mt-12 bg-gradient-to-r from-pink-600 to-blue-500 bg-clip-text text-transparent">PORTFÓLIO</h2>
+        <h4 class="text-lg xl:text-xl 2xl:text-2xl text-gray-400 mt-2">Projetos que representam minha evolução</h4>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
+
+        <div *ngFor="let project of projects"
+            class="group bg-[#111723] border border-bordercolor rounded-2xl overflow-hidden hover:scale-105 transition duration-300">
+
+            <img [src]="project.image" [alt]="project.title"
+                class="w-full h-52 object-cover group-hover:scale-110 transition duration-300">
+
+            <div class="p-5">
+                <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
+                <p class="text-gray-400 text-sm">{{ project.desc }}</p>
+
+                <a [href]="project.link" target="_blank" class="inline-block mt-4 hover:text-blue-500">
+                    Ver projeto →
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>

@@ -1,1 +1,98 @@
-<p>contato works!</p>
+<div *ngIf="toastMessage" [ngClass]="{
+    'border-emerald-600': toastType === 'success',
+    'border-pink-600': toastType === 'error'
+  }" class="fixed top-5 left-1/2 -translate-x-1/2 
+         px-5 py-3 rounded-2xl
+         text-white text-sm
+         bg-black/80 backdrop-blur-md
+         border
+         z-[9999]
+         animate-toastFade">
+  {{ toastMessage }}
+</div>
+
+<section class="flex flex-col xl:flex-row gap-10 max-w-7xl mx-auto mt-12 text-white">
+
+  <article class="xl:w-1/2">
+    <h2
+      class="text-2xl lg:text-5xl font-semibold bg-gradient-to-r from-pink-600 to-blue-500 bg-clip-text text-transparent">
+      VOCÊ TEM ALGUM PROJETO PARA DISCUTIR?
+    </h2>
+
+    <p class="mt-6 text-xl flex items-center gap-2">
+      <i class="fa-solid fa-comment-dots"></i>
+      ENTRE EM CONTATO COMIGO
+    </p>
+
+    <div class="mt-10">
+      <p class="text-2xl mb-2">CONTATO</p>
+      <a href="mailto:pabloquirino.dev@gmail.com" class="hover:underline text-lg hover:text-blue-500">
+        {{ 'pabloquirino.dev@gmail.com' }}
+      </a>
+    </div>
+
+    <div class="mt-10">
+      <p class="text-2xl mb-2">REDES SOCIAIS</p>
+      <div class="ml-2 text-2xl flex space-x-4">
+        <a href="https://www.linkedin.com/in/pablo-quirino-53138a271" class="hover:text-blue-500" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/pabloquirino" class="hover:text-blue-500" target="_blank"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/pbquirino_" class="hover:text-blue-500" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/5521983997371" class="hover:text-blue-500" target="_blank"><i
+            class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </article>
+
+  <article class="xl:w-1/2 mt-10 xl:mt-0">
+    <form class="flex flex-col gap-6 bg-gray-900/40 backdrop-blur-sm p-8 rounded-2xl shadow-xl"
+      (ngSubmit)="sendMessage()" [formGroup]="contactForm">
+
+      <h3 class="text-2xl mb-2">ENVIE SUA MENSAGEM</h3>
+
+      <div class="flex flex-col">
+        <label class="mb-1 text-lg" for="name">Nome</label>
+        <input id="name" type="text" formControlName="name" placeholder="Digite seu nome" class="p-3 rounded-xl bg-gray-800 border outline-none transition
+                 border-gray-700
+                 focus:border-blue-500
+                 invalid:border-red-500"
+          [class.border-red-500]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" />
+        <span class="text-sm text-red-400 mt-1"
+          *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+          Nome deve ter pelo menos 2 caracteres.
+        </span>
+      </div>
+
+      <div class="flex flex-col">
+        <label class="mb-1 text-lg" for="email">Email</label>
+        <input id="email" type="email" formControlName="email" placeholder="Digite seu e-mail" class="p-3 rounded-xl bg-gray-800 border outline-none transition
+                 border-gray-700
+                 focus:border-blue-500"
+          [class.border-red-500]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" />
+        <span class="text-sm text-red-400 mt-1"
+          *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+          Digite um e-mail válido.
+        </span>
+      </div>
+
+      <div class="flex flex-col">
+        <label class="mb-1 text-lg" for="message">Mensagem</label>
+        <textarea id="message" rows="5" formControlName="message" placeholder="Digite sua mensagem..." class="p-3 rounded-xl bg-gray-800 border border-gray-700 outline-none resize-none transition
+                 focus:border-blue-500"
+          [class.border-red-500]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
+        <span class="text-sm text-red-400 mt-1"
+          *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+          A mensagem deve ter pelo menos 5 caracteres.
+        </span>
+      </div>
+
+      <button type="submit" class="mt-4 py-3 rounded-xl text-xl font-semibold bg-gradient-to-r from-pink-600 to-blue-500 
+               hover:opacity-90 transition disabled:opacity-40 disabled:cursor-not-allowed"
+        [disabled]="contactForm.invalid">
+        Enviar mensagem
+      </button>
+    </form>
+  </article>
+</section>

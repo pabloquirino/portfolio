@@ -14,3 +14,15 @@ body {
 .animate-fade {
   animation: fade 0.4s ease-out;
 }
+
+@keyframes toastFade {
+  0% { opacity: 0; transform: translate(-50%, -10px); }
+  10% { opacity: 1; transform: translate(-50%, 0); }
+  90% { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, -10px); }
+}
+
+.animate-toastFade {
+  animation: toastFade 3s forwards;
+}
+

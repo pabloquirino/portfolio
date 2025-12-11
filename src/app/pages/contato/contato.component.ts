@@ -60,4 +60,7 @@ export class ContatoComponent {
       })
 
   }
+
+  currentYear = new Date().getFullYear();
+
 }

@@ -13,25 +13,25 @@ export class PortfolioComponent {
    projects: Project[] = [
     {
       title: 'Sistema de Gestão',
-      image: '/assets/me/me.png',
+      image: '',
       desc: 'Aplicação web para controle financeiro e relatórios.',
       link: '#'
     },
     {
       title: 'Landing Page',
-      image: '/assets/me/me.png',
+      image: '',
       desc: 'Página moderna focada em conversão e performance.',
       link: '#'
     },
     {
       title: 'Dashboard Administrativo',
-      image: '/assets/me/me.png',
+      image: '',
       desc: 'Painel administrativo com gráficos dinâmicos.',
       link: '#'
     },
     {
       title: 'API REST',
-      image: '/assets/me/me.png',
+      image: '',
       desc: 'Backend escalável com autenticação JWT.',
       link: '#'
     }

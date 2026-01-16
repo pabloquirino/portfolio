@@ -10,28 +10,29 @@ import { CommonModule } from '@angular/common';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
-   projects: Project[] = [
+  projects: Project[] = [
+    {
+      title: 'Landing Page',
+      image: 'assets/projects/powerfit.png',
+      desc: 'Focada em simplicidade, boa experiência do usuário (UX) e código organizado.',
+      link: 'https://powerfit-kappa.vercel.app/',
+      linkGithub: 'https://github.com/pabloquirino/powerfit'
+    },
     {
       title: 'Sistema de Gestão',
-      image: '',
+      image: 'assets/projects/preview.jpg',
       desc: 'Aplicação web para controle financeiro e relatórios.',
       link: '#'
     },
     {
-      title: 'Landing Page',
-      image: '',
-      desc: 'Página moderna focada em conversão e performance.',
-      link: '#'
-    },
-    {
       title: 'Dashboard Administrativo',
-      image: '',
+      image: 'assets/projects/preview.jpg',
       desc: 'Painel administrativo com gráficos dinâmicos.',
       link: '#'
     },
     {
       title: 'API REST',
-      image: '',
+      image: 'assets/projects/preview.jpg',
       desc: 'Backend escalável com autenticação JWT.',
       link: '#'
     }

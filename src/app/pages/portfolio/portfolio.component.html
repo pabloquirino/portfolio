@@ -17,9 +17,14 @@
                 <h3 class="text-xl font-semibold mb-2">{{ project.title }}</h3>
                 <p class="text-gray-400 text-sm">{{ project.desc }}</p>
 
-                <a [href]="project.link" target="_blank" class="inline-block mt-4 hover:text-blue-500">
-                    Ver projeto →
-                </a>
+                <div class="flex flex-col">
+                    <a [href]="project.link" target="_blank" class="inline-block mt-4 hover:text-blue-500">
+                        Ver projeto →
+                    </a>
+                    <a [href]="project.linkGithub" target="_blank" class="inline-block mt-1 hover:text-blue-500">
+                        GitHub →
+                    </a>
+                </div>
             </div>
 
         </div>

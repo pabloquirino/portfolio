@@ -3,4 +3,5 @@ export interface Project {
   image: string;
   desc: string;
   link?: string;
+  linkGithub?: string;
 }

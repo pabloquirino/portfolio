@@ -19,10 +19,11 @@ export class PortfolioComponent {
       linkGithub: 'https://github.com/pabloquirino/powerfit'
     },
     {
-      title: 'Sistema de Gestão',
-      image: 'assets/projects/preview.jpg',
-      desc: 'Aplicação web para controle financeiro e relatórios.',
-      link: '#'
+      title: 'Marketplace de Veículos',
+      image: 'assets/projects/autocommerce.png',
+      desc: 'Desenvolvida com Angular, focada em performance, escalabilidade e experiência do usuário.',
+      link: '#',
+      linkGithub: 'https://github.com/pabloquirino/auto-commerce'
     },
     {
       title: 'Dashboard Administrativo',

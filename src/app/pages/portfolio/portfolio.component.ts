@@ -22,19 +22,19 @@ export class PortfolioComponent {
       title: 'Marketplace de Veículos',
       image: 'assets/projects/autocommerce.png',
       desc: 'Desenvolvida com Angular, focada em performance, escalabilidade e experiência do usuário.',
-      link: '#',
+      link: 'https://auto-commerce-eight.vercel.app/',
       linkGithub: 'https://github.com/pabloquirino/auto-commerce'
-    },
-    {
-      title: 'Dashboard Administrativo',
-      image: 'assets/projects/preview.jpg',
-      desc: 'Painel administrativo com gráficos dinâmicos.',
-      link: '#'
     },
     {
       title: 'API REST',
       image: 'assets/projects/preview.jpg',
       desc: 'Backend escalável com autenticação JWT.',
+      link: '#'
+    },
+    {
+      title: 'Dashboard Administrativo',
+      image: 'assets/projects/preview.jpg',
+      desc: 'Painel administrativo com gráficos dinâmicos.',
       link: '#'
     }
   ];

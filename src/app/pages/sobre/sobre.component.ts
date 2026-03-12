@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 export class SobreComponent {
   downloadCV() {
     const link = document.createElement('a')
-    link.href = '/assets/cv/cv.pdf'
+    link.href = '/assets/cv/CV_Pablo_Quirino.pdf'
     link.download = 'CV_Pablo_Quirino.pdf'
     link.click()
   }

@@ -12,11 +12,17 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent {
   projects: Project[] = [
     {
-      title: 'Landing Page',
-      image: 'assets/projects/powerfit.png',
-      desc: 'Focada em simplicidade, boa experiência do usuário (UX) e código organizado.',
-      link: 'https://powerfit-kappa.vercel.app/',
-      linkGithub: 'https://github.com/pabloquirino/powerfit'
+      title: 'Sistema de Gestão de Serviços',
+      image: 'assets/projects/preview.jpg',
+      desc: 'ERP fullstack de mercado, incluindo ordens de serviço, gestão de clientes, agenda e módulos administrativos.',
+      link: '#'
+    },
+    {
+      title: 'API REST',
+      image: 'assets/projects/swagger.png',
+      desc: 'REST API escalável construída com .NET 8, Clean Architecture e CQRS, com autenticação JWT + Refresh Token, deploy contínuo via GitHub Actions e Railway.',
+      link: 'https://apirest-production-d659.up.railway.app/swagger',
+      linkGithub: 'https://github.com/pabloquirino/apirest'
     },
     {
       title: 'Marketplace de Veículos',
@@ -26,16 +32,11 @@ export class PortfolioComponent {
       linkGithub: 'https://github.com/pabloquirino/auto-commerce'
     },
     {
-      title: 'API REST',
-      image: 'assets/projects/preview.jpg',
-      desc: 'Backend escalável com autenticação JWT.',
-      link: '#'
-    },
-    {
-      title: 'Dashboard Administrativo',
-      image: 'assets/projects/preview.jpg',
-      desc: 'Painel administrativo com gráficos dinâmicos.',
-      link: '#'
+      title: 'Landing Page',
+      image: 'assets/projects/powerfit.png',
+      desc: 'Focada em simplicidade, boa experiência do usuário (UX) e código organizado.',
+      link: 'https://powerfit-kappa.vercel.app/',
+      linkGithub: 'https://github.com/pabloquirino/powerfit'
     }
   ];
 }

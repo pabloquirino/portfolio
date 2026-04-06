@@ -11,6 +11,8 @@ export class SobreComponent {
     const link = document.createElement('a')
     link.href = '/assets/cv/cv_pablo_quirino.pdf'
     link.download = 'cv_pablo_quirino.pdf'
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
   }
 }

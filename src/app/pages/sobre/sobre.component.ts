@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
   styleUrl: './sobre.component.scss'
 })
 export class SobreComponent {
-  downloadCV() {
+  downloadPDF() {
     const link = document.createElement('a')
     link.href = '/assets/cv/cv_pablo_quirino.pdf'
     link.download = 'cv_pablo_quirino.pdf'
     link.click()
   }
 
-  downloadPDF() {
+  downloadCV() {
     const link = document.createElement('a')
-    link.href = '/assets/cv/motivacional.pdf'
-    link.download = 'motivacional.pdf'
+    link.href = '/assets/cv/cv_pablo_quirino.pdf'
+    link.download = 'cv_pablo_quirino.pdf'
     link.click()
   }
 }

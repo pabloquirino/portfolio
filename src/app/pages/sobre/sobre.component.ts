@@ -7,10 +7,20 @@ import { Component } from '@angular/core';
   styleUrl: './sobre.component.scss'
 })
 export class SobreComponent {
-  downloadCV() {
-    const link = document.createElement('a')
-    link.href = '/assets/cv/cv_pablo_quirino.pdf'
-    link.download = 'Cv_Pablo_Quirino.pdf'
-    link.click()
+  async downloadCV() {
+    try {
+      const response = await fetch('/assets/cv/cv_pablo_quirino.pdf')
+      const blob = await response.blob()
+      const blobUrl = window.URL.createObjectURL(blob)
+
+      const link = document.createElement('a')
+      link.href = blobUrl
+      link.download = 'Cv_Pablo_Quirino.pdf'
+      link.click()
+
+      window.URL.revokeObjectURL(blobUrl)
+    } catch (error) {
+      console.error('Erro ao baixar o CV:', error)
+    }
   }
 }

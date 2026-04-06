@@ -1,4 +1,19 @@
 {
+  "headers": [
+    {
+      "source": "/assets/cv/(.*).pdf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/pdf"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=Cv_Pablo_Quirino.pdf"
+        }
+      ]
+    }
+  ],
   "rewrites": [
     {
       "source": "/(.*)",
@@ -6,4 +21,3 @@
     }
   ]
 }
-

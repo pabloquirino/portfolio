@@ -12,10 +12,11 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent {
   projects: Project[] = [
     {
-      title: 'Sistema de Gestão de Serviços',
+      title: 'CRM de Atendimento ao Cliente',
       image: 'assets/projects/preview.jpg',
-      desc: 'ERP fullstack de mercado, incluindo ordens de serviço, gestão de clientes, agenda e módulos administrativos.',
-      link: '#'
+      desc: 'Desenvolvido com C#, Angular e SQL Server, integrado ao Dialogflow automação de atendimentos. Possui gestão de clientes, controle de tickets e histórico de interações.',
+      link: '#',
+      linkGithub: 'https://github.com/pabloquirino/techclient'
     },
     {
       title: 'API REST',

@@ -13,8 +13,8 @@ export class PortfolioComponent {
   projects: Project[] = [
     {
       title: 'CRM de Atendimento ao Cliente',
-      image: 'assets/projects/preview.jpg',
-      desc: 'Desenvolvido com C#, Angular e SQL Server, integrado ao Dialogflow automação de atendimentos. Possui gestão de clientes, controle de tickets e histórico de interações.',
+      image: 'assets/projects/techclient.png',
+      desc: 'Desenvolvido com C#, Angular e SQL Server, integrado ao Dialogflow + IA generativa para automação de atendimentos. Possui gestão de clientes, controle de tickets e histórico de interações.',
       link: '#',
       linkGithub: 'https://github.com/pabloquirino/techclient'
     },
@@ -38,6 +38,13 @@ export class PortfolioComponent {
       desc: 'Focada em simplicidade, boa experiência do usuário (UX) e código organizado.',
       link: 'https://powerfit-kappa.vercel.app/',
       linkGithub: 'https://github.com/pabloquirino/powerfit'
+    },
+    {
+      title: 'Sistema de Gestão Fiscal com IA',
+      image: 'assets/projects/preview.jpg',
+      desc: 'Em desenvolvimento.',
+      link: '#',
+      linkGithub: '#'
     }
   ];
 }

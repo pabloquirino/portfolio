@@ -15,7 +15,7 @@ export class PortfolioComponent {
       title: 'CRM de Atendimento ao Cliente',
       image: 'assets/projects/techclient.png',
       desc: 'Desenvolvido com C#, Angular e SQL Server, integrado ao Dialogflow + IA generativa para automação de atendimentos. Possui gestão de clientes, controle de tickets e histórico de interações.',
-      link: '#',
+      link: 'https://www.youtube.com/shorts/k6h239-GYv4',
       linkGithub: 'https://github.com/pabloquirino/techclient'
     },
     {

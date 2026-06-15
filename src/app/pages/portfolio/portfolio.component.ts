@@ -12,6 +12,13 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent {
   projects: Project[] = [
     {
+      title: 'Planejador Semanal Com IA',
+      image: 'assets/projects/weekly.jpg',
+      desc: 'Em Desenvolvimento.',
+      link: 'https://www.youtube.com/shorts/k6h239-GYv4',
+      linkGithub: 'https://github.com/pabloquirino/techclient'
+    },
+    {
       title: 'CRM de Atendimento ao Cliente',
       image: 'assets/projects/techclient.png',
       desc: 'Desenvolvido com C#, Angular e SQL Server, integrado ao Dialogflow + IA generativa para automação de atendimentos. Possui gestão de clientes, controle de tickets e histórico de interações.',

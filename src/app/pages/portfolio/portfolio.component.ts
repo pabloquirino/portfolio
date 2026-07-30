@@ -12,8 +12,8 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent {
   projects: Project[] = [
     {
-      title: 'Planejador Financeiro Com IA',
-      image: 'assets/projects/financial.jpg',
+      title: 'Assistente de Treino & Nutricional Com IA',
+      image: 'assets/projects/nutri.jpg',
       desc: 'Em Desenvolvimento.',
       linkGithub: '/'
     },

@@ -12,10 +12,10 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent {
   projects: Project[] = [
     {
-      title: 'Assistente de Treino & Nutricional Com IA',
-      image: 'assets/projects/nutri.jpg',
+      title: 'Mini-DevOps',
+      image: 'assets/projects/devops.jpg',
       desc: 'Em Desenvolvimento.',
-      linkGithub: '/'
+      linkGithub: 'https://github.com/pabloquirino/mini-devops'
     },
     {
       title: 'Planejador Semanal Com IA',

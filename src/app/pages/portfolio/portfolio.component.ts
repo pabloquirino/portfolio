@@ -12,6 +12,12 @@ import { CommonModule } from '@angular/common';
 export class PortfolioComponent {
   projects: Project[] = [
     {
+      title: 'QA-Copilot',
+      image: '#',
+      desc: 'Em Desenvolvimento.',
+      linkGithub: 'https://github.com/pabloquirino'
+    },
+    {
       title: 'Mini-DevOps',
       image: 'assets/projects/devops.jpg',
       desc: 'Em Desenvolvimento.',

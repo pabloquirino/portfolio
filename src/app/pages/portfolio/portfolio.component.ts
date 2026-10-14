@@ -24,8 +24,14 @@ export class PortfolioComponent {
       linkGithub: 'https://github.com/pabloquirino'
     },
     {
-      title: 'Mini-DevOps',
-      image: 'assets/projects/devops.jpg',
+      title: 'Task Board',
+      image: 'assets/projects/preview.jpg',
+      desc: 'Em Desenvolvimento.',
+      linkGithub: 'https://github.com/pabloquirino/mini-devops'
+    },
+     {
+      title: 'Support-Assistant',
+      image: 'assets/projects/preview.jpg',
       desc: 'Em Desenvolvimento.',
       linkGithub: 'https://github.com/pabloquirino/mini-devops'
     },

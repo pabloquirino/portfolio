@@ -29,10 +29,16 @@ export class PortfolioComponent {
       desc: 'Em Desenvolvimento.',
       linkGithub: 'https://github.com/pabloquirino/mini-devops'
     },
+    {
+      title: 'R-Regras',
+      image: 'assets/projects/preview.jpg',
+      desc: 'Em Desenvolvimento... Repo Privado',
+      linkGithub: 'https://github.com/pabloquirino'
+    },
      {
       title: 'Support-Assistant',
       image: 'assets/projects/preview.jpg',
-      desc: 'Em Desenvolvimento.',
+      desc: 'Em Desenvolvimento.. Repo privado',
       linkGithub: 'https://github.com/pabloquirino/mini-devops'
     },
     {
@@ -51,11 +57,6 @@ export class PortfolioComponent {
       image: 'assets/projects/jwt.jpg',
       desc: 'REST API escalável construída com .NET 8, Clean Architecture e CQRS, com autenticação JWT + Refresh Token, deploy contínuo via GitHub Actions e Railway.',
       linkGithub: 'https://github.com/pabloquirino/apirest'
-    },{
-      title: 'Marketplace Veículos',
-      image: 'assets/projects/autocommerce.png',
-      desc: 'Auto Commerce é uma plataforma web para compra e venda de veículos, desenvolvida com Angular 19, que permite aos usuários anunciar, editar e gerenciar seus próprios anúncios após autenticação via Google (Firebase Auth).',
-      linkGithub: 'https://github.com/pabloquirino/auto-commerce'
     }
   ];
 }

@@ -1,86 +1,32 @@
 <section class="max-w-7xl">
 
     <h2
-        class="text-4xl lg:text-5xl font-semibold tracking-widest mt-12 mb-12 bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text text-transparent">
-        SKILLS
+        class="text-4xl lg:text-5xl font-semibold tracking-widest mt-12 mb-10 bg-gradient-to-r from-blue-900 to-blue-500 bg-clip-text text-transparent">
+        STACK
     </h2>
 
-    <div class="grid gap-8">
+    <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3 mb-12">
+        @for (group of groups; track group.title) {
+            <div
+                class="group rounded-xl border border-white/10 bg-white/[0.03] p-4 transition hover:border-blue-500/40 hover:bg-white/[0.06]">
+                <h3 class="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-white/80 mb-3">
+                    <span class="text-base">{{ group.emoji }}</span>
+                    {{ group.title }}
+                </h3>
 
-        <!-- Automação & IA -->
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-semibold text-white mb-5">
-                🤖 IA
-            </h3>
-
-            <div class="flex flex-wrap gap-5">
-                <img class="w-14" src="/assets/skills/claude.svg" alt="Anthropic">
-                <img class="w-14" src="/assets/skills/chatgpt.png" alt="OpenAI">
-                <img class="w-14" src="/assets/skills/gemini.png" alt="Gemini">
-                <img class="w-14" src="/assets/skills/deepseek.png" alt="DeepSeek">
+                <ul class="flex flex-wrap gap-1.5">
+                    @for (skill of group.skills; track skill.name) {
+                        <li
+                            class="flex items-center gap-1.5 rounded-md border border-white/10 bg-white/5 px-2 py-1 text-xs lg:text-sm text-white/85 transition hover:border-blue-500/50 hover:text-white">
+                            @if (skill.icon) {
+                                <img class="w-4 h-4 object-contain" [src]="'/assets/skills/' + skill.icon" [alt]="skill.name">
+                            }
+                            <span>{{ skill.name }}</span>
+                        </li>
+                    }
+                </ul>
             </div>
-        </div>
-
-        <!-- Backend -->
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-semibold text-white mb-5">
-                ⚙️ Backend
-            </h3>
-
-            <div class="flex flex-wrap gap-5">
-                <img class="w-14" src="/assets/skills/dotnet.svg" alt=".NET">
-                <img class="w-14" src="/assets/skills/c-sharp.svg" alt="C#">
-                <img class="w-14" src="/assets/skills/python.png" alt="Python">
-                <img class="w-14" src="/assets/skills/node.svg" alt="Node.js">
-            </div>
-        </div>
-
-        <!-- Frontend -->
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-semibold text-white mb-5">
-                🎨 Frontend
-            </h3>
-
-            <div class="flex flex-wrap gap-5">
-                <img class="w-14" src="/assets/skills/atom.png" alt="React">
-                <img class="w-14" src="/assets/skills/angular.svg" alt="Angular">
-                <img class="w-14" src="/assets/skills/typescript.svg" alt="TypeScript">
-                <img class="w-14" src="/assets/skills/javascript.svg" alt="JavaScript">
-                <img class="w-14" src="/assets/skills/tailwindcss.svg" alt="Tailwind">
-                <img class="w-14" src="/assets/skills/sass.svg" alt="SCSS">
-            </div>
-        </div>
-
-        <!-- Banco de Dados -->
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-6">
-            <h3 class="text-xl font-semibold text-white mb-5">
-                🗄️ Banco de Dados
-            </h3>
-
-            <div class="flex flex-wrap gap-5">
-                <img class="w-14" src="/assets/skills/postgre.svg" alt="PostgreSQL">
-                <img class="w-14" src="/assets/skills/sqlserver.svg" alt="SQL Server">
-                <img class="w-14" src="/assets/skills/mysql.svg" alt="MySQL">
-            </div>
-        </div>
-
-        <!-- DevOps -->
-        <div class="rounded-2xl border border-white/10 bg-white/5 p-6 mb-12">
-            <h3 class="text-xl font-semibold text-white mb-5">
-                🚀 DevOps & Ferramentas
-            </h3>
-
-            <div class="flex flex-wrap gap-5">
-                <img class="w-14" src="/assets/skills/docker.svg" alt="Docker">
-                <img class="w-14" src="/assets/skills/git.svg" alt="Git">
-                <img class="w-14" src="/assets/skills/github.png" alt="GitHub">
-                <img class="w-14" src="/assets/skills/redis.png" alt="Redis">
-                <img class="w-14" src="/assets/skills/rabbitmq.svg" alt="RabbitMQ">
-                <img class="w-14" src="/assets/skills/postman.svg" alt="Postman">
-                <img class="w-14" src="/assets/skills/swagger.png" alt="Swagger">
-            </div>
-        </div>
-
+        }
     </div>
 
 </section>

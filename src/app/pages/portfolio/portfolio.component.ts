@@ -25,7 +25,7 @@ export class PortfolioComponent {
       linkGithub: 'https://github.com/pabloquirino'
     },
     {
-      title: 'QA-Copilot',
+      title: 'AI QA Framework',
       image: 'assets/projects/preview.jpg',
       desc: 'Em desenvolvimento.',
       inProgress: true,
